@@ -35,11 +35,18 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     var nbseven: Int = 0
     
     var winnings: Int = 0
-    var playerBet: Int = 500
-    var playermoney: Int = 5000
+    var playerBet: Int = 200
+    var playermoney: Int = 3000
+    @IBOutlet weak var playermoneyl: UILabel!
+    @IBOutlet weak var playerbetl: UILabel!
+    @IBOutlet weak var playerwinning: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        playermoneyl.text = String(playermoney)
+        playerbetl.text = String(playerBet)
+        playerwinning.text = String(winnings)
         // Do any additional setup after loading the view.
         
         let imggrapes = slotComp(image: UIImage(named: "grapes"), item: "grapes")
@@ -59,9 +66,35 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         srandom(UInt32(time(nil)))
         
     }
-
+    @IBAction func addten(_ sender: Any) {
+        playerBet = playerBet + 10
+        playerbetl.text = String(playerBet)
+    }
+    @IBAction func subten(_ sender: Any) {
+        if (playerBet > 10) {
+            playerBet = playerBet - 10
+            playerbetl.text = String(playerBet)
+        }
+        
+    }
+    @IBAction func resetbtn(_ sender: Any) {
+        playerBet = 200
+        playermoney = 3000
+        winnings = 0
+        playerbetl.text = String(playerBet)
+        playermoneyl.text = String(playermoney)
+        playerwinning.text = String(winnings)
+    }
+    
     @IBAction func button(_ sender: Any) {
         //timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: Selector("randomSpin"), userInfo: nil, repeats: true)
+        if (playerBet > playermoney) {
+            return
+        }
+        if (playermoney <= 0) {
+            return
+        }
+        
         row1 = ""
         row2 = ""
         row3 = ""
@@ -86,6 +119,10 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         print(playerBet)
         print(winnings)
         print(playermoney)
+        
+        playermoneyl.text = String(playermoney)
+        playerbetl.text = String(playerBet)
+        playerwinning.text = String(winnings)
     }
     
     func countitem(){
