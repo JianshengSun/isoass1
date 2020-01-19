@@ -9,13 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
-
+    @IBOutlet weak var backlightgif: UIImageView!
+    
     @IBOutlet weak var slotMachine: UIPickerView!
+    @IBOutlet weak var row1gif: UIImageView!
+    @IBOutlet weak var row2gif: UIImageView!
+    @IBOutlet weak var row3gif: UIImageView!
     
     struct slotComp {
         var image: UIImage!
         var item: String
     }
+    @IBOutlet weak var slotBtn: UIButton!
     
     var counter = 0
     var images = [slotComp]()
@@ -43,6 +48,16 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        backlightgif.loadGif(name: "backlightslow")
+        row1gif.loadGif(name: "rolling")
+        row2gif.loadGif(name: "rolling")
+        row3gif.loadGif(name: "rolling")
+        
+        row1gif.isHidden = true
+        row2gif.isHidden = true
+        row3gif.isHidden = true
+        
         
         playermoneyl.text = String(playermoney)
         playerbetl.text = String(playerBet)
@@ -87,6 +102,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
     
     @IBAction func button(_ sender: Any) {
+        
+        backlightgif.loadGif(name: "backlightfast")
         //timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: Selector("randomSpin"), userInfo: nil, repeats: true)
         if (playerBet > playermoney) {
             return
@@ -94,6 +111,11 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         if (playermoney <= 0) {
             return
         }
+        
+        slotBtn.setImage( UIImage.init(named: "1"), for: .normal)
+        row1gif.isHidden = false
+        row2gif.isHidden = false
+        row3gif.isHidden = false
         
         row1 = ""
         row2 = ""
@@ -110,19 +132,34 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         winnings = 0
         playermoney = playermoney - playerBet
         
-        randomSpin()
-        randomSpin()
-        randomSpin()
-        countitem()
-        determineWinnings()
-        playermoney = playermoney + winnings
-        print(playerBet)
-        print(winnings)
-        print(playermoney)
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
+            self.randomSpin()
+            self.row1gif.isHidden = true
+        }
         
-        playermoneyl.text = String(playermoney)
-        playerbetl.text = String(playerBet)
-        playerwinning.text = String(winnings)
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+            self.randomSpin()
+            self.row2gif.isHidden = true
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5) {
+            self.randomSpin()
+            self.row3gif.isHidden = true
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+            self.countitem()
+            self.determineWinnings()
+            self.playermoney = self.playermoney + self.winnings
+            
+            self.playermoneyl.text = String(self.playermoney)
+            self.playerbetl.text = String(self.playerBet)
+            self.playerwinning.text = String(self.winnings)
+            
+            self.backlightgif.loadGif(name: "backlightslow")
+            self.slotBtn.setImage( UIImage.init(named: "0"), for: .normal)
+        }
+
     }
     
     func countitem(){

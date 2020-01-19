@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C358DC2F23D4C3B50082A401 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C358DC2E23D4C3B50082A401 /* UIImage+Gif.swift */; };
+		C358DC3823D4CEB30082A401 /* backlightfast.gif in Resources */ = {isa = PBXBuildFile; fileRef = C358DC3623D4CEB30082A401 /* backlightfast.gif */; };
+		C358DC3923D4CEB30082A401 /* backlightslow.gif in Resources */ = {isa = PBXBuildFile; fileRef = C358DC3723D4CEB30082A401 /* backlightslow.gif */; };
+		C358DC3B23D50F210082A401 /* rolling.gif in Resources */ = {isa = PBXBuildFile; fileRef = C358DC3A23D50F210082A401 /* rolling.gif */; };
 		C35CBCF023D0F67800692730 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35CBCEF23D0F67800692730 /* AppDelegate.swift */; };
 		C35CBCF223D0F67800692730 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35CBCF123D0F67800692730 /* SceneDelegate.swift */; };
 		C35CBCF423D0F67800692730 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35CBCF323D0F67800692730 /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C358DC2E23D4C3B50082A401 /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		C358DC3623D4CEB30082A401 /* backlightfast.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = backlightfast.gif; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/backlightfast.gif"; sourceTree = "<group>"; };
+		C358DC3723D4CEB30082A401 /* backlightslow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = backlightslow.gif; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/backlightslow.gif"; sourceTree = "<group>"; };
+		C358DC3A23D50F210082A401 /* rolling.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rolling.gif; sourceTree = "<group>"; };
 		C35CBCEC23D0F67800692730 /* isoass1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = isoass1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C35CBCEF23D0F67800692730 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C35CBCF123D0F67800692730 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +65,10 @@
 			isa = PBXGroup;
 			children = (
 				C35CBCEF23D0F67800692730 /* AppDelegate.swift */,
+				C358DC2E23D4C3B50082A401 /* UIImage+Gif.swift */,
+				C358DC3623D4CEB30082A401 /* backlightfast.gif */,
+				C358DC3A23D50F210082A401 /* rolling.gif */,
+				C358DC3723D4CEB30082A401 /* backlightslow.gif */,
 				C35CBCF123D0F67800692730 /* SceneDelegate.swift */,
 				C35CBCF323D0F67800692730 /* ViewController.swift */,
 				C35CBCF523D0F67800692730 /* Main.storyboard */,
@@ -125,6 +137,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C358DC3823D4CEB30082A401 /* backlightfast.gif in Resources */,
+				C358DC3923D4CEB30082A401 /* backlightslow.gif in Resources */,
+				C358DC3B23D50F210082A401 /* rolling.gif in Resources */,
 				C35CBCFC23D0F67900692730 /* LaunchScreen.storyboard in Resources */,
 				C35CBCF923D0F67900692730 /* Assets.xcassets in Resources */,
 				C35CBCF723D0F67800692730 /* Main.storyboard in Resources */,
@@ -140,6 +155,7 @@
 			files = (
 				C35CBCF423D0F67800692730 /* ViewController.swift in Sources */,
 				C35CBCF023D0F67800692730 /* AppDelegate.swift in Sources */,
+				C358DC2F23D4C3B50082A401 /* UIImage+Gif.swift in Sources */,
 				C35CBCF223D0F67800692730 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
