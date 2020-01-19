@@ -1,0 +1,20 @@
+PODS:
+  - Gifu (3.2.0)
+  - TinyConstraints (4.0.1)
+
+DEPENDENCIES:
+  - Gifu (~> 3.2.0)
+  - TinyConstraints (~> 4.0.0)
+
+SPEC REPOS:
+  trunk:
+    - Gifu
+    - TinyConstraints
+
+SPEC CHECKSUMS:
+  Gifu: 7bcb6427457d85e0b4dff5a84ec5947ac19a93ea
+  TinyConstraints: 8dd91295e56797648c7bc335dd20e1d91ec4c192
+
+PODFILE CHECKSUM: 8509669a5c49368a12e6a5ead2439d38418af272
+
+COCOAPODS: 1.8.4
