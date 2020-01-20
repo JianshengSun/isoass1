@@ -7,31 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C310D0B523D538E700B669E7 /* gameover.gif in Resources */ = {isa = PBXBuildFile; fileRef = C310D0B423D538E700B669E7 /* gameover.gif */; };
 		C358DC2F23D4C3B50082A401 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C358DC2E23D4C3B50082A401 /* UIImage+Gif.swift */; };
-		C358DC3823D4CEB30082A401 /* backlightfast.gif in Resources */ = {isa = PBXBuildFile; fileRef = C358DC3623D4CEB30082A401 /* backlightfast.gif */; };
-		C358DC3923D4CEB30082A401 /* backlightslow.gif in Resources */ = {isa = PBXBuildFile; fileRef = C358DC3723D4CEB30082A401 /* backlightslow.gif */; };
 		C358DC3B23D50F210082A401 /* rolling.gif in Resources */ = {isa = PBXBuildFile; fileRef = C358DC3A23D50F210082A401 /* rolling.gif */; };
 		C35CBCF023D0F67800692730 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35CBCEF23D0F67800692730 /* AppDelegate.swift */; };
 		C35CBCF223D0F67800692730 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35CBCF123D0F67800692730 /* SceneDelegate.swift */; };
 		C35CBCF423D0F67800692730 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35CBCF323D0F67800692730 /* ViewController.swift */; };
 		C35CBCF723D0F67800692730 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C35CBCF523D0F67800692730 /* Main.storyboard */; };
-		C35CBCF923D0F67900692730 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C35CBCF823D0F67900692730 /* Assets.xcassets */; };
 		C35CBCFC23D0F67900692730 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C35CBCFA23D0F67900692730 /* LaunchScreen.storyboard */; };
+		C3F17A5C23D65DE5002E1FEF /* youwin.gif in Resources */ = {isa = PBXBuildFile; fileRef = C3F17A5923D65DE4002E1FEF /* youwin.gif */; };
+		C3F17A5D23D65DE5002E1FEF /* goodluck.gif in Resources */ = {isa = PBXBuildFile; fileRef = C3F17A5A23D65DE4002E1FEF /* goodluck.gif */; };
+		C3F17A5E23D65DE5002E1FEF /* youlose.gif in Resources */ = {isa = PBXBuildFile; fileRef = C3F17A5B23D65DE5002E1FEF /* youlose.gif */; };
+		C3F17A7323D66009002E1FEF /* backlightslow.gif in Resources */ = {isa = PBXBuildFile; fileRef = C3F17A7123D66009002E1FEF /* backlightslow.gif */; };
+		C3F17A7423D66009002E1FEF /* backlightfast.gif in Resources */ = {isa = PBXBuildFile; fileRef = C3F17A7223D66009002E1FEF /* backlightfast.gif */; };
+		C3F17A7523D67227002E1FEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3F17A7723D67227002E1FEF /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C310D0B423D538E700B669E7 /* gameover.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gameover.gif; sourceTree = "<group>"; };
 		C358DC2E23D4C3B50082A401 /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
-		C358DC3623D4CEB30082A401 /* backlightfast.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = backlightfast.gif; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/backlightfast.gif"; sourceTree = "<group>"; };
-		C358DC3723D4CEB30082A401 /* backlightslow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = backlightslow.gif; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/backlightslow.gif"; sourceTree = "<group>"; };
 		C358DC3A23D50F210082A401 /* rolling.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rolling.gif; sourceTree = "<group>"; };
 		C35CBCEC23D0F67800692730 /* isoass1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = isoass1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C35CBCEF23D0F67800692730 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C35CBCF123D0F67800692730 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C35CBCF323D0F67800692730 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C35CBCF623D0F67800692730 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C35CBCF823D0F67900692730 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C35CBCFB23D0F67900692730 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C35CBCFD23D0F67900692730 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3F17A5923D65DE4002E1FEF /* youwin.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = youwin.gif; sourceTree = "<group>"; };
+		C3F17A5A23D65DE4002E1FEF /* goodluck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = goodluck.gif; sourceTree = "<group>"; };
+		C3F17A5B23D65DE5002E1FEF /* youlose.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = youlose.gif; sourceTree = "<group>"; };
+		C3F17A7123D66009002E1FEF /* backlightslow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = backlightslow.gif; sourceTree = "<group>"; };
+		C3F17A7223D66009002E1FEF /* backlightfast.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = backlightfast.gif; sourceTree = "<group>"; };
+		C3F17A7623D67227002E1FEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Base; path = Base.lproj/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +74,17 @@
 			children = (
 				C35CBCEF23D0F67800692730 /* AppDelegate.swift */,
 				C358DC2E23D4C3B50082A401 /* UIImage+Gif.swift */,
-				C358DC3623D4CEB30082A401 /* backlightfast.gif */,
+				C310D0B423D538E700B669E7 /* gameover.gif */,
 				C358DC3A23D50F210082A401 /* rolling.gif */,
-				C358DC3723D4CEB30082A401 /* backlightslow.gif */,
+				C3F17A5A23D65DE4002E1FEF /* goodluck.gif */,
+				C3F17A5B23D65DE5002E1FEF /* youlose.gif */,
+				C3F17A5923D65DE4002E1FEF /* youwin.gif */,
+				C3F17A7223D66009002E1FEF /* backlightfast.gif */,
+				C3F17A7123D66009002E1FEF /* backlightslow.gif */,
 				C35CBCF123D0F67800692730 /* SceneDelegate.swift */,
 				C35CBCF323D0F67800692730 /* ViewController.swift */,
 				C35CBCF523D0F67800692730 /* Main.storyboard */,
-				C35CBCF823D0F67900692730 /* Assets.xcassets */,
+				C3F17A7723D67227002E1FEF /* Assets.xcassets */,
 				C35CBCFA23D0F67900692730 /* LaunchScreen.storyboard */,
 				C35CBCFD23D0F67900692730 /* Info.plist */,
 			);
@@ -137,11 +149,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C358DC3823D4CEB30082A401 /* backlightfast.gif in Resources */,
-				C358DC3923D4CEB30082A401 /* backlightslow.gif in Resources */,
+				C3F17A5C23D65DE5002E1FEF /* youwin.gif in Resources */,
+				C3F17A5D23D65DE5002E1FEF /* goodluck.gif in Resources */,
 				C358DC3B23D50F210082A401 /* rolling.gif in Resources */,
 				C35CBCFC23D0F67900692730 /* LaunchScreen.storyboard in Resources */,
-				C35CBCF923D0F67900692730 /* Assets.xcassets in Resources */,
+				C3F17A7323D66009002E1FEF /* backlightslow.gif in Resources */,
+				C3F17A7523D67227002E1FEF /* Assets.xcassets in Resources */,
+				C3F17A5E23D65DE5002E1FEF /* youlose.gif in Resources */,
+				C310D0B523D538E700B669E7 /* gameover.gif in Resources */,
+				C3F17A7423D66009002E1FEF /* backlightfast.gif in Resources */,
 				C35CBCF723D0F67800692730 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,6 +193,14 @@
 				C35CBCFB23D0F67900692730 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C3F17A7723D67227002E1FEF /* Assets.xcassets */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3F17A7623D67227002E1FEF /* Base */,
+			);
+			name = Assets.xcassets;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -15,8 +15,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundup" translatesAutoresizingMaskIntoConstraints="NO" id="mog-K2-Bxz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgrounddown" translatesAutoresizingMaskIntoConstraints="NO" id="ZjF-Xd-mM7">
+                                <rect key="frame" x="0.0" y="375" width="375" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dl3-z9-czd">
-                                <rect key="frame" x="22" y="175" width="330" height="165"/>
+                                <rect key="frame" x="32" y="175" width="313" height="165"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backlines" translatesAutoresizingMaskIntoConstraints="NO" id="eyE-qB-wbp">
@@ -28,7 +36,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMR-JN-KLk">
-                                <rect key="frame" x="310" y="398" width="41" height="81"/>
+                                <rect key="frame" x="299" y="383" width="41" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="0"/>
                                 <connections>
@@ -36,7 +44,7 @@
                                 </connections>
                             </button>
                             <pickerView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YRU-Bn-m4T">
-                                <rect key="frame" x="22" y="175" width="330" height="165"/>
+                                <rect key="frame" x="27" y="175" width="325" height="165"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="money" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uen-BY-1oZ">
@@ -61,25 +69,29 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Qz-O8-0G2">
-                                <rect key="frame" x="135" y="453" width="30" height="30"/>
+                                <rect key="frame" x="131" y="434" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="+10"/>
+                                <state key="normal" title="+10" backgroundImage="buttonbk">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="addten:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tzg-P1-wWZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOR-8P-RNT">
-                                <rect key="frame" x="195" y="453" width="30" height="30"/>
+                                <rect key="frame" x="163" y="434" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="-10"/>
+                                <state key="normal" title="-10" backgroundImage="buttonbk">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="subten:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vx5-0d-mw2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWZ-Cp-v4t">
-                                <rect key="frame" x="54" y="453" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWZ-Cp-v4t">
+                                <rect key="frame" x="217" y="434" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="RESET"/>
+                                <state key="normal" image="reset"/>
                                 <connections>
                                     <action selector="resetbtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cyq-pr-rb6"/>
                                 </connections>
@@ -100,12 +112,38 @@
                                 <rect key="frame" x="223" y="198" width="66" height="119"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OZz-9Q-HND">
+                                <rect key="frame" x="45" y="89" width="285" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="JACKPOT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGp-oL-5mW">
+                                <rect key="frame" x="53" y="420" width="55" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CId-Wr-3UI">
+                                <rect key="frame" x="45" y="436" width="83" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zzz" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Jic-9A-sPt">
+                                <rect key="frame" x="299" y="383" width="41" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="backlightgif" destination="Dl3-z9-czd" id="P3c-eK-zSA"/>
+                        <outlet property="cannotplay" destination="Jic-9A-sPt" id="dVM-br-wbn"/>
+                        <outlet property="infoimg" destination="OZz-9Q-HND" id="px6-ph-CRG"/>
+                        <outlet property="jackpotl" destination="CId-Wr-3UI" id="dVg-dY-NhQ"/>
                         <outlet property="playerbetl" destination="fWy-O2-rex" id="Ea7-he-RH5"/>
                         <outlet property="playermoneyl" destination="Uen-BY-1oZ" id="bVd-Mv-5Ca"/>
                         <outlet property="playerwinning" destination="v9w-yx-aod" id="4Fa-qs-fwR"/>
@@ -123,7 +161,12 @@
     </scenes>
     <resources>
         <image name="0" width="40" height="80"/>
+        <image name="backgrounddown" width="700" height="700"/>
+        <image name="backgroundup" width="700" height="700"/>
         <image name="backlines" width="660" height="330"/>
+        <image name="buttonbk" width="30" height="30"/>
         <image name="info" width="660" height="330"/>
+        <image name="reset" width="46" height="30"/>
+        <image name="zzz" catalog="system" width="60" height="64"/>
     </resources>
 </document>
