@@ -135,6 +135,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quit" translatesAutoresizingMaskIntoConstraints="NO" id="QFH-AH-b32">
+                                <rect key="frame" x="204" y="523" width="119" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeU-dh-X3s">
+                                <rect key="frame" x="210" y="559" width="48" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="quitbtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LoS-cQ-Q4t"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -166,6 +177,7 @@
         <image name="backlines" width="660" height="330"/>
         <image name="buttonbk" width="30" height="30"/>
         <image name="info" width="660" height="330"/>
+        <image name="quit" width="100" height="100"/>
         <image name="reset" width="46" height="30"/>
         <image name="zzz" catalog="system" width="60" height="64"/>
     </resources>

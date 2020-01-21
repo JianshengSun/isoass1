@@ -2,9 +2,10 @@
 //  UIImage+Gif.swift
 //  isoass1
 //
-//  Created by Jason on 2020-01-19.
+//  Created by Jason on 2020-01-19. Student ID: 300997240
 //  Copyright © 2020 centennialcollege. All rights reserved.
 //
+// This file get from GitHub, use for add function : .loadGif(name: String)
 
 import UIKit
 import ImageIO

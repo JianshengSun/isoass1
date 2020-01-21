@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  isoass1
 //
-//  Created by Jason on 2020-01-16.
+//  Created by Jason on 2020-01-16. Student ID: 300997240
 //  Copyright © 2020 centennialcollege. All rights reserved.
 //
 
