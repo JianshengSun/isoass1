@@ -27,7 +27,7 @@
 		C310D0B423D538E700B669E7 /* gameover.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gameover.gif; sourceTree = "<group>"; };
 		C358DC2E23D4C3B50082A401 /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
 		C358DC3A23D50F210082A401 /* rolling.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rolling.gif; sourceTree = "<group>"; };
-		C35CBCEC23D0F67800692730 /* isoass1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = isoass1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C35CBCEC23D0F67800692730 /* iosass1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosass1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C35CBCEF23D0F67800692730 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C35CBCF123D0F67800692730 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C35CBCF323D0F67800692730 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 		C35CBCED23D0F67800692730 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C35CBCEC23D0F67800692730 /* isoass1.app */,
+				C35CBCEC23D0F67800692730 /* iosass1.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,7 +108,7 @@
 			);
 			name = isoass1;
 			productName = isoass1;
-			productReference = C35CBCEC23D0F67800692730 /* isoass1.app */;
+			productReference = C35CBCEC23D0F67800692730 /* iosass1.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -332,7 +332,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.centennialcollege.isoass1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iosass1;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -350,7 +350,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.centennialcollege.isoass1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iosass1;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
