@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8A1438B23D8DC66007863A5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8A1438A23D8DC66007863A5 /* AVFoundation.framework */; };
+		A8A1438D23D8DE52007863A5 /* slotmachine.mpeg in Resources */ = {isa = PBXBuildFile; fileRef = A8A1438C23D8DE52007863A5 /* slotmachine.mpeg */; };
 		C310D0B523D538E700B669E7 /* gameover.gif in Resources */ = {isa = PBXBuildFile; fileRef = C310D0B423D538E700B669E7 /* gameover.gif */; };
 		C358DC2F23D4C3B50082A401 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C358DC2E23D4C3B50082A401 /* UIImage+Gif.swift */; };
 		C358DC3B23D50F210082A401 /* rolling.gif in Resources */ = {isa = PBXBuildFile; fileRef = C358DC3A23D50F210082A401 /* rolling.gif */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A8A1438A23D8DC66007863A5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A8A1438C23D8DE52007863A5 /* slotmachine.mpeg */ = {isa = PBXFileReference; lastKnownFileType = video.mpeg; path = slotmachine.mpeg; sourceTree = "<group>"; };
 		C310D0B423D538E700B669E7 /* gameover.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gameover.gif; sourceTree = "<group>"; };
 		C358DC2E23D4C3B50082A401 /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
 		C358DC3A23D50F210082A401 /* rolling.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rolling.gif; sourceTree = "<group>"; };
@@ -47,17 +51,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8A1438B23D8DC66007863A5 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A8A1438923D8DC66007863A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8A1438A23D8DC66007863A5 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C35CBCE323D0F67800692730 = {
 			isa = PBXGroup;
 			children = (
 				C35CBCEE23D0F67800692730 /* isoass1 */,
 				C35CBCED23D0F67800692730 /* Products */,
+				A8A1438923D8DC66007863A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +95,7 @@
 				C3F17A5923D65DE4002E1FEF /* youwin.gif */,
 				C3F17A7223D66009002E1FEF /* backlightfast.gif */,
 				C3F17A7123D66009002E1FEF /* backlightslow.gif */,
+				A8A1438C23D8DE52007863A5 /* slotmachine.mpeg */,
 				C35CBCF123D0F67800692730 /* SceneDelegate.swift */,
 				C35CBCF323D0F67800692730 /* ViewController.swift */,
 				C35CBCF523D0F67800692730 /* Main.storyboard */,
@@ -154,6 +169,7 @@
 				C358DC3B23D50F210082A401 /* rolling.gif in Resources */,
 				C35CBCFC23D0F67900692730 /* LaunchScreen.storyboard in Resources */,
 				C3F17A7323D66009002E1FEF /* backlightslow.gif in Resources */,
+				A8A1438D23D8DE52007863A5 /* slotmachine.mpeg in Resources */,
 				C3F17A7523D67227002E1FEF /* Assets.xcassets in Resources */,
 				C3F17A5E23D65DE5002E1FEF /* youlose.gif in Resources */,
 				C310D0B523D538E700B669E7 /* gameover.gif in Resources */,

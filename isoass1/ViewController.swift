@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import AVFoundation
 
-class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
-    
+class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,AVAudioPlayerDelegate {
+    var player:AVAudioPlayer = AVAudioPlayer()
+   
     //imageview
     @IBOutlet weak var backlightgif: UIImageView!
     @IBOutlet weak var slotMachine: UIPickerView!
@@ -88,6 +90,20 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         playerwinning.text = String(winnings)
         // Do any additional setup after loading the view.
         
+        
+        
+        do{
+            let audioplayer = Bundle.main.path(forResource: "slotmachine", ofType: "mpeg")
+            try player = AVAudioPlayer(contentsOf:NSURL(fileURLWithPath: audioplayer!) as URL)
+            }
+                 
+            
+            catch
+            {
+               // Error
+            }
+            
+     
         //set image and name
         let imggrapes = slotComp(image: UIImage(named: "grapes"), item: "grapes")
         let imgbananas = slotComp(image: UIImage(named: "bananas"), item: "bananas")
@@ -545,5 +561,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 3
     }
+   
 }
 
