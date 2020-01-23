@@ -235,6 +235,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         }
         //set state to 1, start
         btnstate = 1
+        player.play()
         
         //gif initialization
         infoimg.loadGif(name: "goodluck")
@@ -330,6 +331,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             if self.playermoney == 0 {
                 self.infoimg.loadGif(name: "gameover")
             }
+            self.player.stop()
         }
     }
     
